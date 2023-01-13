@@ -1,0 +1,119 @@
+.c-loader {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 20px;
+    width: 20px;
+  }
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+  
+  .laboratorio{
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: between;
+  	
+  }
+    
+  .glyphicon-ok{
+  	color: green;
+  
+  }
+  
+  .glyphicon-alert{
+  	color: #d6a02b;
+  	
+  }
+  
+  
+   .glyphicon-remove{
+   	color: red;
+   	
+   }
+   
+   
+   #perfil{
+   	color:white;
+   	margin-top: .7em;
+   }
+   
+   #perfil:hover{
+   	transition: .5s;
+   	color: #dad7d7;
+   }
+   
+   
+   #container-form{
+   	display: flex;
+   	flex-direction: row;
+   	justify-content: space-between;
+   	
+   	padding: .8em;
+   }
+   
+/*formulario*/
+
+.form-default{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	
+	padding:1em;
+	
+	width: 650px
+}
+
+.container-buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evely;
+	
+	
+	width: 800px;
+}
+.container-buttons button{
+	height: 22px;
+	font-size: 8pt;
+	line-height: 1em;
+	text-align: center;
+	margin-right: .7em;
+}
+
+
+.form-default label{
+	font-size: 14px;
+    color: #333;
+    font-weight: 400;
+}
+
+.container-flex{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+
+}
+
+
+
+
+.form-default input[type=text] {
+	background-color: #F6F8FA;
+	
+} 
+
+
+#container-radio{
+	margin-left: 2em;
+}
+
+.nav-drop:hover{
+	transition: .5s;
+	background-color: #e9e7fe;
+}

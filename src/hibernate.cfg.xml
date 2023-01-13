@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+		
+		
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/netlab</property>
+        <property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">admin</property>
+		  
+		
+		<!-- conexão data source do banco de dados -->
+		<!-- <property name="connection.datasource">java:comp/env/jndi/netlabds</property>-->
+		
+    
+        <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>     
+        <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>     
+        <property name="use_outer_join">false</property>         
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.use_outer_join">false</property>  
+        
+       
+        <property name="hibernate.use_outer_join">false</property>  
+     	
+     	<mapping class="br.com.system.model.Configuracao"/>
+     	<mapping class="br.com.system.model.Hospedagem"/>
+     	<mapping class="br.com.system.model.Usuario"/>
+   
+                            
+                                 
+    </session-factory>
+</hibernate-configuration>
